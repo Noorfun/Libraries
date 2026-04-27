@@ -1,0 +1,249 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(sajad-nori-7QP6dndNHEg-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 10vh;
+    position: relative;
+    color: #fff;
+    font-family: "the-seasons", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+header {
+    background: #506cad;
+    padding: 0.5rem 0;
+    width: 100%;
+
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0rem 1.5rem;
+
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    color:#fff;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    flex-direction: row;
+    flex-shrink: 0;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    margin-left: 8px; 
+
+}
+
+.logo span {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-family:  'Work Sans', sans-serif;
+    margin: 0rem 0.4rem;
+    align-items: center;
+    padding: 0.5rem 0.5rem;
+    color: #fff;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    letter-spacing: 0;
+    padding: 0.7rem 1rem;
+
+}
+
+.logo h2 {
+    display: inline;
+    color:#fff;
+    font-size: 1.2rem;
+
+}
+
+main h1 {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    text-align: center;
+    color:#fff;
+
+}
+
+main h2 {
+    font-size: 4.1rem;
+}
+
+.txt h2 span{
+    color: #3150d0;
+    border-radius: 5px;
+}
+
+main h4 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+p {
+    font-size: 0.8rem;
+    text-align: center;
+    line-height: 1.9;
+    margin-top: 1rem;
+}
+
+.references {
+    background: #fff;
+    padding: 4rem 2rem;
+    color: #000;
+}
+
+.references-box {
+    background: #4666b1;
+    border-radius: 20px;
+    padding: 2rem 3rem;
+    max-width: 900px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.references-box h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.references-box ol {
+    padding-left: 1.2rem;
+    line-height: 2;
+    font-size: 0.95rem;
+}
+
+.references-box a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.references-box a:hover {
+    text-decoration: underline;
+}
+
+.references-box ol li {
+    margin-bottom: 0.8rem;
+}
+
+.references-box ol li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.references-box ol li a:hover {
+    text-decoration: underline;
+}
+
+.references-box ol li a:visited {
+    color: #e0dede;
+}
+
+.references-box ol li a:active {
+    color: #c0bebe;
+}
+
+.references h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #000;
+}
+
+.work-log {
+    background: #fff;
+    padding: 4rem 2rem;
+    color: #000;
+}
+
+.work-log h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #000;
+}
+
+.work-log img {
+    display: block;
+    margin: 0 auto;
+    max-width: 80%;
+    height: auto;
+}
+
+.work-log .caption {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+    color: #000;
+}
+
+.content h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.content p {
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.9;
+    margin: 0 auto;
+    max-width: 600px;
+}

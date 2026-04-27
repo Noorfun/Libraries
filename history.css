@@ -1,0 +1,319 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(michaela-murphy-TIS8AnSiFI4-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 10vh;
+    position: relative;
+    color: #fff;
+    font-family: "the-seasons", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+header {
+    background: #506cad;
+    padding: 0.5rem 0;
+    width: 100%;
+
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0rem 1.5rem;
+
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    color:#fff;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    flex-direction: row;
+    flex-shrink: 0;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    margin-left: 8px; 
+
+}
+
+.logo span {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-family:  'Work Sans', sans-serif;
+    margin: 0rem 0.4rem;
+    align-items: center;
+    padding: 0.5rem 0.5rem;
+    color: #fff;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    letter-spacing: 0;
+    padding: 0.7rem 1rem;
+
+}
+
+.logo h2 {
+    display: inline;
+    color:#fff;
+    font-size: 1.2rem;
+
+}
+
+main h1 {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    text-align: center;
+    color:#fff;
+
+}
+
+main h2 {
+    font-size: 4.1rem;
+}
+
+.txt h2 span{
+    color: #3150d0;
+    border-radius: 5px;
+}
+
+main h4 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+p {
+    font-size: 0.8rem;
+    text-align: center;
+    line-height: 1.9;
+    margin-top: 1rem;
+}
+
+.history {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 0 auto;
+    flex-direction: row;
+    background: #fff;
+    color: #000;
+    padding: 2rem 1rem;
+}
+
+.history h1 {
+    text-align:  left;
+}
+
+.history p {
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.9;
+    margin-top: 1rem;
+}
+
+.card {
+    background-color: #4666b1;
+    width: 400px;             
+    height: 300px;             
+    border-radius: 20px;      
+    border: 2px solid #4666b1;
+    display: flex;
+    align-items: center;         
+    justify-content: center;
+    color: white;
+    font-size: 1.2em;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    float: right;
+}
+
+.card :hover .card1 :hover{
+    transform: translateY(-10px); 
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3); 
+}
+
+.CityofFairfax {
+    background: #fff;
+    color: #000;
+    padding: 2rem 1rem;
+    width: 100%;
+}
+
+.cof-layout {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+}
+
+.cof-text {
+    flex: 1;
+    text-align: right;
+}
+
+.cof-text h1 {
+    text-align: right;
+    margin-bottom: 1rem;
+}
+
+.cof-text p {
+    text-align: right;
+    font-size: 1rem;
+    line-height: 1.9;
+}
+
+.card1 {
+    background-color: #4666b1;
+    width: 400px;             
+    height: 300px;             
+    border-radius: 20px;      
+    border: 2px solid #4666b1;
+    display: flex;
+    align-items: center;         
+    justify-content: center;
+    color: white;
+    font-size: 1.2em;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    float: left;
+    margin-right: 40px;
+}
+
+.card1:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3); 
+}
+
+.card1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+ 
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 0 auto;
+    flex-direction: column;
+    background: #fff;
+    color: #000;
+    padding: 4rem 2rem;
+}
+.card3, .card4, .card5 {
+    width: 400px;
+    min-height: 120px;
+    background-color: #4666b1;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+.card3:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3); 
+}
+
+
+
+.card4:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3); 
+}
+
+
+
+.card5:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3); 
+}
+
+.card-grid {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    justify-content: center;
+}
+
+.card-content {
+    display: none !important;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    text-align: center;
+    color: white;
+    line-height: 1.6;
+}
+
+.card-content.open {
+    display: block !important;
+}
+
+
+
+
+
+

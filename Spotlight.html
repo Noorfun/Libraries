@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>library </title>
+    <link rel="stylesheet" href="Spotlight.css"> 
+    <link rel="stylesheet" href="https://use.typekit.net/clu2byc.css">  
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+</head>
+<body>
+    <header>
+            <div class="container">
+                <nav>
+                    <div class = "logo">
+                        <img src = "logo of book.png" alt="logo">
+                        <h2><span>B</span>eyond the Shelves</h2>
+                    </div>
+                    <ul>
+                        <a href="index.html">Home</a>
+                        <a href="History.html">History</a>
+                        <a href="Resources.html">Resources</a>
+                        <a href="Spotlight.html">Spotlight/Profile</a>
+                        <a href="References.html">References</a>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+    <main>
+        <div class = "container">
+            <div class = "content1">
+                <div class = "txt">
+                    <h1>The Spotlight on: Fairfax County Public Librarys</h1>
+                    <h4>Where stories come to life</h4>
+                </div>
+                <p>Explore our spotlight profiles and references to learn more about the impact of libraries on society.</p>
+                </div>
+            </div> 
+        </div>
+    </main>
+<section class="spotlight">
+    <div class="container">
+        <div class="spotlight-layout">
+            <div class="card3" onclick="toggleCard('card3-content')">
+                <h3>Community Innovators</h3>
+                <span>▼</span>
+                <div id="card3-content" class="card-content">
+                    <p>Community Innovators are individuals who utilize library resources to learn and develop projects. Examples include student researchers who enhance academic skills by accessing reliable information, job seekers using library services to improve employment opportunities, and new skill learners attending workshops to gain confidence in areas like coding or art. Families also engage with library programs that promote shared learning experiences, strengthening both literacy skills and family bonds.</p>
+                </div>
+            </div>
+            <div class="spotlight-text">
+                <h1>The Spotlight Shines on Books</h1>
+                <p>The library is more than just a building filled with books; it is a living part of the community where people come together every day! Community Profiles and Spotlights highlight the voices, stories, and experiences of the people who use and support the library. From teens and librarians to families and community members, each story shows how the library plays an important role in everyday life!
+This section helps bring the library to life by showing real people and real experiences! It highlights how different groups use the library in unique ways, whether it is to learn something new, find support, share ideas, or connect with others. These stories show that the library is not just about resources, but about people working, learning, and growing together!
+Through these spotlights, we can see how the library strengthens the community in many different ways! It is a place where voices are heard, ideas are shared, and everyone has the chance to be part of something bigger.
+</p>
+            </div>
+            <div class="card4" onclick="toggleCard('card4-content')">
+                <h3>The Teen Advisory Board</h3>
+                <span>▼</span>
+                <div id="card4-content" class="card-content">
+                    <p>The Teen Advisory Board (TAB) comprises students who enhance the library experience for their peers by sharing ideas, providing feedback, and assisting in event planning. TAB members develop leadership skills through collaboration and program development, such as game nights and workshops. Their involvement allows them to voice their opinions, fostering a sense of ownership and connection to the library. Additionally, TAB promotes friendships among members and collaboration with librarians, creating a nurturing community atmosphere. Ultimately, TAB empowers teens to become leaders and changemakers, enriching their community and library experience.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="voices">
+    <div class="container">
+        <h1>Voices from the Library</h1>
+        <p>Libraries would not be what they are today without the people who run them. Librarians are the heart of the library, and their work goes far beyond organizing books. They are leaders, teachers, and supporters who help people learn, grow, and feel welcome. Through interviews with librarians across Fairfax County, we can better understand how important their roles are and how much they care about their communities.</p>
+        <div class="voices-grid">
+            <div class="voice-card">
+                <h3>Katherine M.</h3>
+                <p class="role">School Librarian</p>
+                <p class="quote">“Know our collection… they like to come to the library.”</p>
+            </div>
+            <div class="voice-card">
+                <h3>Amery S.</h3>
+                <p class="role">Assistant Branch Manager</p>
+                <p class="quote">“He actually was able to pass a citizenship exam… and he credits the library with his ability to do that.”</p>
+            </div>
+            <div class="voice-card">
+                <h3>Chris</h3>
+                <p class="role">Youth Services Manager</p>
+                <p class="quote">“it’s more about providing information”</p>
+            </div>
+            <div class="voice-card">
+                <h3>Robert H.</h3>
+                <p class="role">School Librarian</p>
+                <p class="quote"> “Everybody is welcome… whatever reason they’re here.”</p>
+            </div>
+            <div class="voice-card">
+                <h3>Emily</h3>
+                <p class="role">Library Assistant</p>
+                <p class="quote">“We have a lot of people who come in and they just want to be around other people.”</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+<script>
+    function toggleCard(id) {
+        const content = document.getElementById(id);
+        content.classList.toggle('open');
+    }
+</script>
+
+</body>
+</html>
