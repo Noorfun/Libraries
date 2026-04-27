@@ -14,10 +14,11 @@
             <div class="container">
                 <nav>
                     <div class = "logo">
+                        <button class="hamburger" onclick="toggleMenu()">☰</button>
                         <img src = "logo of book.png" alt="logo">
                         <h2><span>B</span>eyond the Shelves</h2>
                     </div>
-                    <ul>
+                    <ul id="nav-menu">
                         <a href="index.html">Home</a>
                         <a href="History.html">History</a>
                         <a href="Resources.html">Resources</a>
@@ -106,6 +107,11 @@ In the library's 2010 fiscal year (through June 2010), nearly 14 million items w
     function toggleCard(id) {
         const content = document.getElementById(id);
         content.classList.toggle('open');
+    }
+
+    function toggleMenu() {
+        const menu = document.getElementById('nav-menu');
+        menu.classList.toggle('open');
     }
 </script>
 </body>

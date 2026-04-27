@@ -262,7 +262,20 @@ padding: 15px;
 font-size: 0.9rem;
 line-height: 1.5;
 }
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
 
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+}
 @media (max-width: 768px) {
     body {
         background-attachment: scroll;
@@ -289,7 +302,18 @@ line-height: 1.5;
     }
 
     nav ul {
-        display: none;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #506cad;
+    padding: 1rem;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    z-index: 999;
+    }
+    nav ul.open {
+    display: flex;
     }
 
     .card3, .card1, .card2 {

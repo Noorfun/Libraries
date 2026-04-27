@@ -15,9 +15,10 @@
                 <nav>
                     <div class = "logo">
                         <img src = "logo of book.png" alt="logo">
+                        <button class="hamburger" onclick="toggleMenu()">☰</button>
                         <h2><span>B</span>eyond the Shelves</h2>
                     </div>
-                    <ul>
+                    <ul id="nav-menu">
                         <a href="index.html">Home</a>
                         <a href="History.html">History</a>
                         <a href="Resources.html">Resources</a>
@@ -76,6 +77,11 @@
         <p class="caption">Thank you very much for viewing our website! We hope you have learned something about communities, and just how much they mean to many!</p>
     </div>
 </section>
-
+<script>
+    function toggleMenu() {
+        const menu = document.getElementById('nav-menu');
+        menu.classList.toggle('open');
+    }
+</script>
 </body>
 </html>

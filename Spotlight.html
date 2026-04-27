@@ -15,9 +15,10 @@
                 <nav>
                     <div class = "logo">
                         <img src = "logo of book.png" alt="logo">
+                        <button class="hamburger" onclick="toggleMenu()">☰</button>
                         <h2><span>B</span>eyond the Shelves</h2>
                     </div>
-                    <ul>
+                    <ul id="nav-menu">
                         <a href="index.html">Home</a>
                         <a href="History.html">History</a>
                         <a href="Resources.html">Resources</a>
@@ -104,6 +105,11 @@ Through these spotlights, we can see how the library strengthens the community i
     function toggleCard(id) {
         const content = document.getElementById(id);
         content.classList.toggle('open');
+    }
+
+    function toggleMenu() {
+        const menu = document.getElementById('nav-menu');
+        menu.classList.toggle('open');
     }
 </script>
 

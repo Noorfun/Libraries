@@ -14,10 +14,11 @@
             <div class="container">
                 <nav>
                     <div class = "logo">
+                        <button class="hamburger" onclick="toggleMenu()">☰</button>
                         <img src = "logo of book.png" alt="logo">
                         <h2><span>B</span>eyond the Shelves</h2>
                     </div>
-                    <ul>
+                    <ul id="nav-menu">
                         <a href="index.html">Home</a>
                         <a href="History.html">History</a>
                         <a href="Resources.html">Resources</a>
@@ -80,4 +81,11 @@
 </div>
 </div>
 </section>
+<script>
+    function toggleMenu() {
+        const menu = document.getElementById('nav-menu');
+        menu.classList.toggle('open');
+    }
+</script>
+</body>
 </html>
