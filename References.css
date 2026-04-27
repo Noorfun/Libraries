@@ -249,6 +249,29 @@ p {
 }
 
 @media (max-width: 768px) {
-    .references-box { padding: 1rem; }
-    .worklog img { width: 100%; }
+    body {
+        background-attachment: scroll;
+    }
+    nav ul {
+        display: none;
+    }
+    main {
+        width: 100%;
+        min-height: 50vh;
+    }
+    .container {
+        width: 100%;
+        padding: 0 1rem;
+    }
+    .references {
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+    .references-box {
+        width: 100%;
+        padding: 1.5rem;
+    }
+    .worklog img {
+        width: 100%;
+    }
 }

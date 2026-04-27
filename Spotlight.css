@@ -339,7 +339,33 @@ p {
 }
 
 @media (max-width: 768px) {
-    .spotlight-layout { flex-direction: column; }
-    .voices-grid { flex-direction: column; align-items: center; }
-    .card3, .card4 { width: 100%; }
+    body {
+        background-attachment: scroll;
+    }
+    nav ul {
+        display: none;
+    }
+    main {
+        width: 100%;
+        min-height: 50vh;
+    }
+    .container {
+        width: 100%;
+        padding: 0 1rem;
+    }
+    .spotlight-layout {
+        flex-direction: column;
+        width: 100%;
+    }
+    .card3, .card4 {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .voices-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    .voice-card {
+        width: 90%;
+    }
 }
